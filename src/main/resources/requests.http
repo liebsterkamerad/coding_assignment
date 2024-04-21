@@ -1,0 +1,13 @@
+### upload a CSV file
+POST http://localhost:8080/api/report/upload
+Content-Type: multipart/form-data
+
+
+### fetch all reports
+GET http://localhost:8080/api/report/fetch-all
+
+### fetch report by code
+GET http://localhost:8080/api/report/fetch-by-code?code=61086009
+
+### delete all reports
+DELETE http://localhost:8080/api/report/delete-all
