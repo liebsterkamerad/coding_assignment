@@ -47,7 +47,7 @@ public class ReportController {
         return new ResponseEntity<>(csvData, headers, HttpStatus.OK);
     }
 
-    @GetMapping("api/report/fetch-by-code")
+    @GetMapping("/api/report/fetch-by-code")
     public ResponseEntity<byte[]> fetchByCode(@RequestParam("code") String code) throws Exception {
         Report report = reportService.fetchByCode(code);
 
@@ -64,7 +64,7 @@ public class ReportController {
         return new ResponseEntity<>(csvData, headers, HttpStatus.OK);
     }
 
-    @DeleteMapping("api/report/delete-all")
+    @DeleteMapping("/api/report/delete-all")
     private void deleteAll() {
         reportService.deleteAll();
     }

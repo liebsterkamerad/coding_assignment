@@ -11,14 +11,12 @@ import lombok.Setter;
 @Getter
 @Entity
 public class Report {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
 
     private String source;
 
     private String codeListCode;
 
+    @Id
     private String code;
 
     private String displayValue;
