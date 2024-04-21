@@ -27,7 +27,6 @@ public class ReportService {
             CsvToBean<Report> csvToBean = new CsvToBeanBuilder<Report>(reader)
                     .withType(Report.class)
                     .withIgnoreLeadingWhiteSpace(true)
-                    .withOrderedResults(true)
                     .build();
 
             return csvToBean.parse();

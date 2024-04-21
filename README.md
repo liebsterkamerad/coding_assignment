@@ -1,0 +1,1 @@
+For using IntelliJ see HTTP request collection in /src/main/resources/requests.http !
